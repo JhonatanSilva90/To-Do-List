@@ -38,11 +38,9 @@ function exibirTarefas() {
           (item.concluida && "concluida") || (item.excluida && "excluida")
         }">
             <p class="texto-tarefa">${item.tarefa}</p>
-            <img
-              src="./images/icon-check.png"
-              alt="imagem de check"
-              onclick="concluirTarefa(${index})"
-            />
+            <input type="checkbox" class="checkbox-tarefa" ${
+              item.concluida ? "checked" : ""
+            } onchange="concluirTarefa(${index})"/>
             <img src="./images/icon-trash.png" alt="imagem lixeira" onclick="deletarItem(${index})"/>
         </li>
         

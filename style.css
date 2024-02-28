@@ -122,3 +122,8 @@ img:hover {
   background-color: rgb(255, 0, 0);
   text-decoration: line-through;
 }
+
+.checkbox-tarefa {
+  width: 24px;
+  height: 24px;
+}
