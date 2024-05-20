@@ -5,6 +5,12 @@
   font-family: "Open Sans", sans-serif;
   outline: none;
 }
+
+:root {
+  --cor-white: #ffffff;
+  --cor-yellow: #ffff00;
+  --cor-footer: #2f2e2e;
+}
 body {
   background-color: rgb(167, 175, 175);
 }
@@ -20,7 +26,7 @@ body {
 h2 {
   text-align: center;
   margin: 10px;
-  color: rgb(255, 255, 255);
+  color: var(--cor-white);
   font-size: 40px;
 }
 
@@ -39,7 +45,7 @@ h2 {
   width: 100px;
   height: 40px;
   background-color: rgb(102, 107, 107);
-  color: rgb(255, 255, 255);
+  color: var(--cor-white);
   font-size: 13px;
   padding: 0 16px;
   float: right;
@@ -64,7 +70,7 @@ h2 {
 }
 
 .itens-list {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--cor-white);
   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
   height: 40px;
   display: flex;
@@ -100,7 +106,7 @@ img:hover {
   width: 100px;
   height: 40px;
   background-color: rgb(102, 107, 107);
-  color: rgb(255, 255, 255);
+  color: var(--cor-white);
   font-size: 13px;
   padding: 0 16px;
   cursor: pointer;
@@ -126,4 +132,44 @@ img:hover {
 .checkbox-tarefa {
   width: 24px;
   height: 24px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center; /* Alinha os itens no centro do eixo Y */
+  width: 100%; /* Para que o footer ocupe todo o eixo X da página */
+  color: var(--cor-white);
+  padding: 20px; /* Tamanho do eixo Y do footer */
+  background-color: var(--cor-footer);
+}
+
+.footer span:first-child {
+  color: var(--cor-yellow);
+}
+.footer span:last-child {
+  color: var(--cor-white);
+}
+
+.logo-footer {
+  font-family: "Tektur", sans-serif;
+  font-size: 1rem;
+  background-color: var(--cor-footer);
+}
+
+.footer a {
+  background-color: var(--cor-footer);
+}
+.footer img {
+  background-color: var(--cor-footer);
+}
+.footer p {
+  background-color: var(--cor-footer);
+}
+
+.links-footer {
+  background-color: var(--cor-footer);
 }
